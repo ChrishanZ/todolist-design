@@ -1,9 +1,9 @@
-import Sample from "./components/Sample/Sample";
+import Content from "./components/Content/Content";
 
 function App() {
   return (
-    <div className="d-flex justify-content-center align-items-center">
-      <Sample />
+    <div className="d-flex flex-column justify-content-center align-items-center">
+      <Content />
     </div>
   );
 }
