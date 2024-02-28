@@ -1,0 +1,23 @@
+.tasks {
+  background-color: var(--white);
+  border-radius: 5px;
+  margin-top: 24px;
+  overflow: hidden;
+}
+
+.footer {
+  padding: 0 24px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 18px;
+  grid-row-gap: 0px;
+
+  color: var(--dark-gray-blue);
+  font-size: 14px;
+}
+.states {
+  font-weight: bold;
+  gap: 18px;
+}
