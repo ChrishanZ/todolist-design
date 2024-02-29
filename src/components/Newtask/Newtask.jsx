@@ -5,7 +5,7 @@ function Newtask() {
   return (
     <div className={styles.newtask}>
       <img src={check} alt="check" />
-      <input type="text" placeholder="Créer une nouvelle  tâche..." />
+      <input type="text" placeholder="Create a new todo…" />
     </div>
   );
 }
