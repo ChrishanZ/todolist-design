@@ -17,6 +17,18 @@
     left: 24px;
     top: 20px;
   }
+  .cross {
+    display: none;
+  }
+  &:hover {
+    .cross {
+      display: block;
+      right: 24px;
+      left: inherit;
+      width: 18px;
+      height: 18px;
+    }
+  }
 }
 
 .taskdone {
@@ -37,5 +49,17 @@
     height: 24px;
     left: 24px;
     top: 20px;
+  }
+  .cross {
+    display: none;
+  }
+  &:hover {
+    .cross {
+      display: block;
+      right: 24px;
+      left: inherit;
+      width: 18px;
+      height: 18px;
+    }
   }
 }
