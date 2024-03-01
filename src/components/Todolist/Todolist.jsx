@@ -14,7 +14,7 @@ function Todolist() {
       </div>
 
       <Newtask todolist={todolist} setTodolist={setTodolist} />
-      <Tasks todolist={todolist} />
+      <Tasks todolist={todolist} setTodolist={setTodolist} />
     </div>
   );
 }

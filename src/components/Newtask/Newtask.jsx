@@ -1,9 +1,23 @@
 import { useState } from "react";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import styles from "./Newtask.module.scss";
 import check from "../../assets/images/check.svg";
 
 function Newtask({ setTodolist, todolist }) {
+  const notifyError = () =>
+    toast.error("Each task must contain more than two characters.", {
+      position: "top-right",
+      theme: "light",
+    });
+
+  const notifySuccess = () =>
+    toast.success("Task successfully added.", {
+      position: "top-right",
+      theme: "light",
+    });
+
   const [newTask, setNewTask] = useState("");
 
   const handleChange = (event) => {
@@ -15,11 +29,15 @@ function Newtask({ setTodolist, todolist }) {
       setTodolist([
         ...todolist,
         {
+          id: crypto.randomUUID(),
           task: newTask,
           done: false,
         },
       ]);
       setNewTask("");
+      notifySuccess();
+    } else if (event.key === "Enter" && newTask.length < 3) {
+      notifyError();
     }
   };
 

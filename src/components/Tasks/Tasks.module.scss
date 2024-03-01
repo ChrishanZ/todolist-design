@@ -20,4 +20,10 @@
 .states {
   font-weight: bold;
   gap: 18px;
+  p {
+    cursor: pointer;
+  }
+}
+.active {
+  color: var(--bright-blue);
 }

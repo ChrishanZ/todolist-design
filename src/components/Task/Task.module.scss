@@ -8,6 +8,8 @@
   color: var(--very-dark-blue);
 
   border-bottom: 1px solid var(--very-light-gray-blue);
+
+  cursor: pointer;
   img {
     position: absolute;
     width: 24px;
@@ -28,6 +30,7 @@
   text-decoration: line-through;
 
   border-bottom: 1px solid var(--very-light-gray-blue);
+  cursor: pointer;
   img {
     position: absolute;
     width: 24px;
