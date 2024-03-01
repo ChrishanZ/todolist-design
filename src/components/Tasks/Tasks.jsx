@@ -1,13 +1,12 @@
 import styles from "./Tasks.module.scss";
 import Task from "../Task/Task";
-import TaskDone from "../TaskDone/TaskDone";
 
-function Tasks() {
+function Tasks({ todolist }) {
   return (
     <div className={` ${styles.tasks}`}>
-      <Task />
-      <Task />
-      <TaskDone />
+      {todolist.map((item, key) => {
+        return <Task key={key} task={item.task} done={item.done} />;
+      })}
 
       <div className={`${styles.footer}`}>
         <p className={styles.text}>5 items left</p>
