@@ -2,9 +2,9 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 import styles from "./Task.module.scss";
-import check from "../../assets/images/check.svg";
-import checked from "../../assets/images/checked.svg";
-import cross from "../../assets/images/cross.svg";
+import check from "/images/check.svg";
+import checked from "/images/checked.svg";
+import cross from "/images/cross.svg";
 
 function Task({ task, done, todolist, setTodolist, id }) {
   const toggleTask = (id) => {

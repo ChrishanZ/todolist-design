@@ -3,7 +3,7 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 import styles from "./Newtask.module.scss";
-import check from "../../assets/images/check.svg";
+import check from "/images/check.svg";
 
 function Newtask({ setTodolist, todolist }) {
   const notifyError = () =>
