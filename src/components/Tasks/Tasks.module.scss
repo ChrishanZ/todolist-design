@@ -3,6 +3,7 @@
   border-radius: 5px;
   margin-top: 24px;
   overflow: hidden;
+  box-shadow: 0px 35px 50px -15px var(--light-gray-blue);
 }
 
 .footer {
@@ -15,14 +16,15 @@
   grid-row-gap: 0px;
 
   color: var(--dark-gray-blue);
+
   font-size: 14px;
+  p {
+    cursor: pointer;
+  }
 }
 .states {
   font-weight: bold;
   gap: 18px;
-  p {
-    cursor: pointer;
-  }
 }
 .active {
   color: var(--bright-blue);
