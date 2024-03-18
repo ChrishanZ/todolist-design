@@ -1,3 +1,5 @@
+@use "../../assets/styles/mixins" as mixin;
+
 .tasks {
   background-color: var(--white);
   border-radius: 5px;
@@ -18,13 +20,37 @@
   color: var(--dark-gray-blue);
 
   font-size: 14px;
+  @include mixin.xs {
+    grid-template-columns: repeat(2, 1fr);
+  }
   p {
     cursor: pointer;
+    @include mixin.xs {
+      font-size: 12px;
+    }
   }
 }
 .states {
   font-weight: bold;
   gap: 18px;
+  @include mixin.xs {
+    display: none !important;
+  }
+}
+.statesMobile {
+  display: none;
+
+  @include mixin.xs {
+    margin-top: 10px;
+    display: flex;
+    font-weight: bold;
+    gap: 18px;
+    color: var(--dark-gray-blue);
+    font-size: 12px;
+  }
+  p {
+    cursor: pointer;
+  }
 }
 .active {
   color: var(--bright-blue);

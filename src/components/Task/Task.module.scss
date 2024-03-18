@@ -1,3 +1,5 @@
+@use "../../assets/styles/mixins" as mixin;
+
 .task {
   position: relative;
   padding-left: 72px;
@@ -8,14 +10,24 @@
   color: var(--very-dark-blue);
 
   border-bottom: 1px solid var(--very-light-gray-blue);
-
   cursor: pointer;
+
+  @include mixin.xs {
+    font-size: 12px;
+    height: 48px;
+    padding-left: 60px;
+  }
   img {
     position: absolute;
     width: 24px;
     height: 24px;
     left: 24px;
     top: 20px;
+    @include mixin.xs {
+      width: 20px;
+      height: 20px;
+      top: 14px;
+    }
   }
   .cross {
     display: none;
@@ -27,6 +39,11 @@
       left: inherit;
       width: 18px;
       height: 18px;
+      @include mixin.xs {
+        width: 12px;
+        height: 12px;
+        top: 18px;
+      }
     }
   }
 }
@@ -43,12 +60,24 @@
 
   border-bottom: 1px solid var(--very-light-gray-blue);
   cursor: pointer;
+
+  @include mixin.xs {
+    font-size: 12px;
+    height: 48px;
+    padding-left: 60px;
+  }
+
   img {
     position: absolute;
     width: 24px;
     height: 24px;
     left: 24px;
     top: 20px;
+    @include mixin.xs {
+      width: 20px;
+      height: 20px;
+      top: 14px;
+    }
   }
   .cross {
     display: none;
@@ -60,6 +89,11 @@
       left: inherit;
       width: 18px;
       height: 18px;
+      @include mixin.xs {
+        width: 12px;
+        height: 12px;
+        top: 18px;
+      }
     }
   }
 }

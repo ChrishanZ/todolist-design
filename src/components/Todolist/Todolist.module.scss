@@ -1,14 +1,23 @@
+@use "../../assets/styles/mixins" as mixin;
+
 .todolist {
   position: absolute;
   width: 540px;
   top: 70px;
   left: 50%;
   transform: translate(-50%, 0);
+
+  @include mixin.xs {
+    width: 327px;
+  }
 }
 
 .title {
   color: var(--white);
   h1 {
     font-size: 40px;
+    @include mixin.xs {
+      font-size: 24px;
+    }
   }
 }

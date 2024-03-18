@@ -79,6 +79,32 @@ function Tasks({ todolist, setTodolist }) {
           Clear completed
         </p>
       </div>
+      <div className={`d-flex justify-content-center ${styles.statesMobile}`}>
+        <p
+          onClick={() => {
+            setFilter("all");
+          }}
+          className={filter === "all" ? styles.active : null}
+        >
+          All
+        </p>
+        <p
+          onClick={() => {
+            setFilter("active");
+          }}
+          className={filter === "active" ? styles.active : null}
+        >
+          Active
+        </p>
+        <p
+          onClick={() => {
+            setFilter("completed");
+          }}
+          className={filter === "completed" ? styles.active : null}
+        >
+          Completed
+        </p>
+      </div>
     </div>
   );
 }
