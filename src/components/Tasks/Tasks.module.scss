@@ -38,7 +38,7 @@
   }
 }
 .statesMobile {
-  display: none;
+  display: none !important;
 
   @include mixin.xs {
     margin-top: 10px;
