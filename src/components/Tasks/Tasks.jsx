@@ -79,7 +79,7 @@ function Tasks({ todolist, setTodolist }) {
           Clear completed
         </p>
       </div>
-      <div className={`d-flex justify-content-center ${styles.statesMobile}`}>
+      <div className={`justify-content-center ${styles.statesMobile}`}>
         <p
           onClick={() => {
             setFilter("all");
